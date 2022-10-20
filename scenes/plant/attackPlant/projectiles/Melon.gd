@@ -36,3 +36,7 @@ func launch(target_position):
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass
+
+
+func _on_Hitbox_area_entered(area):
+	self.queue_free()
