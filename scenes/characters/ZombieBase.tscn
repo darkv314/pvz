@@ -94,6 +94,13 @@ collision_mask = 16
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Position2D/HitBox"]
 
+[node name="HurtMelon" type="Area2D" parent="."]
+collision_layer = 64
+collision_mask = 32
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HurtMelon"]
+
 [connection signal="area_entered" from="HurtBox" to="." method="_on_HurtBox_area_entered"]
 [connection signal="area_entered" from="Position2D/HitBox" to="." method="_on_HitBox_area_entered"]
 [connection signal="area_exited" from="Position2D/HitBox" to="." method="_on_HitBox_area_exited"]
+[connection signal="area_entered" from="HurtMelon" to="." method="_on_HurtMelon_area_entered"]

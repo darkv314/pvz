@@ -72,6 +72,8 @@ plant_move={
 2d_physics/layer_3="zombie_hurt"
 2d_physics/layer_4="zombie_hit"
 2d_physics/layer_5="plant_hurt"
+2d_physics/layer_6="Melon"
+2d_physics/layer_7="zombie_melon"
 
 [physics]
 

@@ -21,7 +21,7 @@ func calculate_arc_velocity(source_position, target_position, arc_height, gravit
 	if displacement.y > arc_height:
 		var time_up = sqrt(-2 * arc_height / float(gravity))
 		var time_down = sqrt(2 * (displacement.y - arc_height) / float(gravity))
-		print("time %s" % (time_up-time_down))
+#		print("time %s" % (time_up-time_down))
 		
 		velocity.y = -sqrt(-2 * gravity * arc_height)
 		velocity.x = displacement.x / float(time_up -time_down)

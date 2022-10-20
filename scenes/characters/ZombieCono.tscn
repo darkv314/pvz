@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://scenes/characters/ZombieBase.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/zombies/cono_caminando.png" type="Texture" id=2]
@@ -492,6 +492,9 @@ extents = Vector2( 27.75, 54.5 )
 [sub_resource type="RectangleShape2D" id=11]
 extents = Vector2( 28, 51 )
 
+[sub_resource type="RectangleShape2D" id=14]
+extents = Vector2( 31.5, 55 )
+
 [node name="KinematicBody2D" instance=ExtResource( 1 )]
 script = ExtResource( 5 )
 
@@ -527,3 +530,7 @@ shape = SubResource( 10 )
 [node name="CollisionShape2D2" parent="Position2D/HitBox" index="1"]
 position = Vector2( -13, 14 )
 shape = SubResource( 11 )
+
+[node name="CollisionShape2D" parent="HurtMelon" index="0"]
+position = Vector2( 4.5, 5 )
+shape = SubResource( 14 )

@@ -19,7 +19,7 @@ func _input(event):
 			position = get_viewport().get_mouse_position()
 #			print('lll')
 
-func _init(new_hp := 3):
+func _init(new_hp := 2):
 	hp = new_hp
 	
 func die():
@@ -37,6 +37,7 @@ func _process(delta):
 
 
 func _on_Plant_mouse_entered():
+	print('lolaso')
 	entered = true
 
 func _on_Plant_mouse_exited():
@@ -44,6 +45,18 @@ func _on_Plant_mouse_exited():
 
 
 func _on_Hurtbox_area_entered(area):
+	print('me duele')
+	$Damage.start()
+	
+
+func _on_Damage_timeout():
 	hp-=1
 	if hp <=0:
+		self.queue_free()
+		$Damage.stop()
 		die()
+
+
+
+func _on_Hurtbox_area_exited(area):
+	$Damage.stop()
