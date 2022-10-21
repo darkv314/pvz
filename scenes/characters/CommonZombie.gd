@@ -2,6 +2,11 @@ extends "res://scenes/characters/ZombieBase.gd"
 
 export var is_done_dying = false
 
+#func _ready():
+#	hp = 100
+#	velocity.x = -0
+#	velocity_value = 200
+
 func _physics_process(delta):
 	move(delta)
 	state_machine.travel('walk')

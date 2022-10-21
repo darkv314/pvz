@@ -15,7 +15,7 @@ func shoot():
 	var melon = melon_path.instance()
 	melon.position = $MelonSpawn.position
 	add_child(melon)
-	melon.launch(Vector2(225, -200))
+	melon.launch(Vector2(700, -200))
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):

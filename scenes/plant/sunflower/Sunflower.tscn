@@ -64,7 +64,7 @@ tree_root = SubResource( 4 )
 parameters/playback = SubResource( 5 )
 
 [node name="SunTimer" type="Timer" parent="." index="5"]
-wait_time = 2.0
+wait_time = 15.0
 autostart = true
 
 [node name="SunSpawn" type="Position2D" parent="." index="6"]

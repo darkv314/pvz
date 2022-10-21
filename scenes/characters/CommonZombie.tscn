@@ -484,7 +484,6 @@ extents = Vector2( 21.7229, 52.8868 )
 extents = Vector2( 26.75, 58 )
 
 [node name="KinematicBody2D" instance=ExtResource( 1 )]
-position = Vector2( 859, 135 )
 script = ExtResource( 3 )
 is_done_dying = false
 
